@@ -1,0 +1,316 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(219, 219, 21);
+}
+
+/* nav bar */
+header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  padding: 15px 60px 15px 60px;
+  z-index: 99999;
+  top: 0;
+  position: sticky;
+}
+
+.navbar {
+  border-bottom: 3px solid green;
+}
+
+header nav a img {
+  height: 80px;
+  width: 80px;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 20px;
+  margin: 0;
+}
+
+header ul a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  transition: all 100ms;
+  color: green;
+  font-size: 25px;
+}
+
+header ul a:hover {
+  font-weight: bold;
+  border-bottom: 1px solid green;
+}
+/* termina nav bar */
+
+/* comienza reciclemos */
+.reciclemos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./img/reciclemos.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  border-bottom: 10px solid green;
+  margin-top: 75px;
+}
+
+.reciclemos .overlay {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de opacidad */
+}
+
+.reciclemos p {
+  color: white;
+  font-size: 100px;
+  font-weight: bolder;
+  align-items: center;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .reciclemos p {
+    font-size: 60px;
+  }
+}
+/* termina reciclemos */
+
+/* comienza parrafo */
+article {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(240, 225, 225);
+}
+
+article h1 {
+  color: green;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 30px;
+}
+
+article p {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  width: 90%;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  article p {
+    padding: 10px;
+  }
+}
+/* termina parrafo */
+
+/* comienza footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: rgb(65, 57, 57);
+  color: white;
+  padding: 20px;
+  gap: 50px;
+}
+
+footer .suscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .suscribe p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+footer .suscribe button {
+  background-color: grey;
+  border: none;
+  font-weight: bold;
+}
+
+footer .suscribe button:hover {
+  background-color: rgb(6, 182, 6);
+}
+
+footer .social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social ul {
+  display: flex;
+  gap: 25px;
+  font-size: 50px;
+  list-style-type: none;
+  padding: 0;
+}
+
+footer .social a {
+  text-decoration: none;
+  color: white;
+  transition: all 200ms;
+}
+
+footer .social ul li a:hover {
+  color: greenyellow;
+}
+
+footer .social p {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+/* termina footer */
+
+/* cominenza css tipos de reciclaje */
+article .tipos {
+  color: rgb(4, 90, 4);
+  margin-top: 75px;
+}
+
+article .reciling {
+  padding-bottom: 20px;
+}
+article .reciling h2 {
+  text-align: center;
+  color: rgb(8, 167, 8);
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  padding: 0;
+}
+
+article .reciling .recicling-p-img {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+}
+
+article .reciling .recicling-p-img p {
+  width: 70%;
+  padding: 0;
+}
+
+article .reciling .recicling-p-img img {
+  width: 600px;
+  height: 400px;
+}
+
+/* termina css tipos de reciclaje */
+/* comienza como reciclo */
+.videos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+
+.videos h1 {
+  color: rgb(8, 167, 8);
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .videos iframe {
+    width: 90%;
+  }
+}
+
+@media (max-width: 884px) {
+  .videos iframe {
+    width: 80%;
+  }
+}
+/* termina como reciclo */
+
+/* comienza formulario contacto */
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 30px;
+  align-content: space-between;
+  width: 50%;
+}
+form input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid green;
+}
+
+form label {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: green;
+}
+
+form button {
+  width: 100px;
+  height: 40px;
+  align-self: center;
+  font-family: "Poppins", sans-serif;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(164, 219, 164);
+
+}
+
+form button:hover {
+  font-weight: bold;
+  color: white;
+  background-color: green;
+  transition: all 250ms;
+}
+
+form textarea {
+  width: 300px;
+  height: 100px;
+}
+
+.deja-mensaje {
+  margin-top: 90px;
+  text-align: center;
+  color: rgb(8, 167, 8);
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .form textarea {
+    width: 90%;
+  }
+}
+
+
+/* termina formulario contacto */
