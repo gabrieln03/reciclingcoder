@@ -312,5 +312,21 @@ form textarea {
   }
 }
 
-
 /* termina formulario contacto */
+/* comienza beneficios */
+.beneficio-h2 {
+  text-align: center;
+  color: brown;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.beneficio-parrafo {
+  width: 80%;
+}
+
+.titulo-beneficio {
+  margin-top: 90px;
+}
+/* termina beneficios */
